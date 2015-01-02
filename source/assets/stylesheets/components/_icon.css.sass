@@ -1,0 +1,46 @@
+// *************************************
+//
+//   Icon
+//   -> Handles icon font usage
+//
+// *************************************
+
+i:before,
+.icn::before
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  display: inline-block
+  font-family: $font-icons
+  font-style: normal
+  font-weight: normal
+  speak: none
+  vertical-align: baseline
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Content ----- //
+
+@each $icon in $icons
+  .icn--#{nth($icon, 1)}::before
+    content: "#{nth($icon, 2)}"
+
+// ----- Utilities ----- //
+
+// Size
+
+.icn--s::before
+  font-size: 100%
+  vertical-align: -5%
+
+.icn--m::before
+  font-size: 250%
+  vertical-align: -19%
+
+.icn--l::before
+  font-size: 450%
+  vertical-align: -24%
+
+.icn--xl::before
+  font-size: 1000%

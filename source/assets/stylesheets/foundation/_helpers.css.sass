@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Helpers
+//   -> Functions, Mixins
+//
+// *************************************
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// -------------------------------------
+//   Mixins (IE9+)
+// -------------------------------------
+
+=animation($args...)
+  -webkit-animation: $args
+  animation: $args
+
+=animation-play-state($arg)
+  -webkit-animation-play-state: $arg
+  animation-play-state: $arg
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=linear-gradient($args...)
+  background-image: -webkit-linear-gradient($args)
+  background-image:         linear-gradient($args)
+
+=perspective($arg)
+  -webkit-perspective: $arg
+  perspective: $arg
+
+=respond-img()
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 144dppx)
+    @content
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+=transform($arg)
+  -webkit-transform: $arg
+  -ms-transform: $arg
+  transform: $arg
+
+=transition($args...)
+  -webkit-transition: $args
+  transition: $args

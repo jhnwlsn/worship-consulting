@@ -1,0 +1,304 @@
+// *************************************
+//
+//   Utilities
+//   -> Global utilities
+//
+// *************************************
+
+// -------------------------------------
+//   Animation
+// -------------------------------------
+
+.aniHide
+  opacity: 0
+  visibility: hidden
+
+.aniShow
+  opacity: 1
+  visibility: visible
+
+// -------------------------------------
+//   Box Sizing
+// -------------------------------------
+
+.borderBox
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// -------------------------------------
+//   Clearfix
+// -------------------------------------
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// -------------------------------------
+//   Display
+// -------------------------------------
+
+.db
+  display: block
+.di
+  display: inline
+.dib
+  display: inline-block
+.dn
+  display: none
+
+// -------------------------------------
+//   Float
+// -------------------------------------
+
+.fl
+  float: left
+.fn
+  float: none
+.fr
+  float: right
+
+// -------------------------------------
+//   List
+// -------------------------------------
+
+.lr
+  @extend .mbf
+  @extend .plf
+  list-style: none
+  li
+    @extend .mbf
+
+// -------------------------------------
+//   Margins
+// -------------------------------------
+
+// ----- All ----- //
+
+.maf
+  margin: 0
+
+// ----- Bottom ----- //
+
+.mbf
+  margin-bottom: 0
+.mbxs
+  margin-bottom: 0.25em
+.mbs
+  margin-bottom: 0.5em
+.mbm
+  margin-bottom: 1em
+.mbl
+  margin-bottom: 2em
+
+// ----- Horizontal ----- //
+
+.mhc
+  margin-left: auto
+  margin-right: auto
+
+// ----- Left ----- //
+
+.mlf
+  margin-left: 0
+.mlxs
+  margin-left: 0.25em
+.mls
+  margin-left: 0.5em
+.mlm
+  margin-left: 1em
+.mll
+  margin-left: 2em
+
+// ----- Right ----- //
+
+.mrf
+  margin-right: 0
+.mrxs
+  margin-right: 0.25em
+.mrs
+  margin-right: 0.5em
+.mrm
+  margin-right: 1em
+.mrl
+  margin-right: 2em
+
+// ----- Top ----- //
+
+.mtf
+  margin-top: 0
+.mtxs
+  margin-top: 0.25em
+.mts
+  margin-top: 0.5em
+.mtm
+  margin-top: 1em
+.mtl
+  margin-top: 2em
+
+// -------------------------------------
+//   Padding
+// -------------------------------------
+
+// ----- All ----- //
+
+.paf
+  padding: 0
+.paxs
+  padding: 0.25em
+.pas
+  padding: 0.5em
+.pam
+  padding: 1em
+.pal
+  padding: 2em
+
+// ----- Bottom ----- //
+
+.pbf
+  padding-bottom: 0
+.pbxs
+  padding-bottom: 0.25em
+.pbs
+  padding-bottom: 0.5em
+.pbm
+  padding-bottom: 1em
+.pbl
+  padding-bottom: 2em
+
+// ----- Left ----- //
+
+.plf
+  padding-left: 0
+.plxs
+  padding-left: 0.25em
+.pls
+  padding-left: 0.5em
+.plm
+  padding-left: 1em
+.pll
+  padding-left: 2em
+
+// ----- Right ----- //
+
+.prf
+  padding-right: 0
+.prxs
+  padding-right: 0.25em
+.prs
+  padding-right: 0.5em
+.prm
+  padding-right: 1em
+.prl
+  padding-right: 2em
+
+// ----- Top ----- //
+
+.ptf
+  padding-top: 0
+.ptxs
+  padding-top: 0.25em
+.pts
+  padding-top: 0.5em
+.ptm
+  padding-top: 1em
+.ptl
+  padding-top: 2em
+
+// -------------------------------------
+//   Rounding
+// -------------------------------------
+
+.rac
+  border-radius: 50%
+.ras
+  border-radius: 3px
+.ram
+  border-radius: 1em
+.ral
+  border-radius: 2em
+
+// -------------------------------------
+//   Stretch
+// -------------------------------------
+
+.stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.tal
+  text-align: left
+.tac
+  text-align: center
+.taj
+  text-align: justify
+.tar
+  text-align: right
+
+// ----- Color ----- //
+
+.tcb
+  color: $c-base
+.tcn
+  color: $c-text
+.tci
+  color: $c-inverse
+
+// ----- Family ----- //
+
+.tfb
+  font-family: $font-base
+
+// ----- Italic ----- //
+
+.ti
+  font-style: italic
+.tin
+  font-style: normal
+
+// ----- Leading ----- //
+
+.tlxs
+  line-height: 1.1
+.tls
+  line-height: 1.3
+.tlm
+  line-height: $base-lineHeight
+.tll
+  line-height: 1.9
+
+// ----- Size ----- //
+
+.tsxs
+  font-size: 75%
+.tss
+  font-size: 90%
+.tsm
+  font-size: 125%
+.tsl
+  font-size: 150%
+.tsxl
+  font-size: 200%
+
+// ----- Transform ----- //
+
+.ttl
+  text-transform: lowercase
+.ttu
+  text-transform: uppercase
+
+// ----- Weight ----- //
+
+.twn
+  font-weight: normal
+.twb
+  font-weight: bold

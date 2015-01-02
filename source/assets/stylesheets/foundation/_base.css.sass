@@ -1,0 +1,67 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+// -------------------------------------
+//   Document
+// -------------------------------------
+
+html
+  @extend .tfb
+  @extend .tlm
+  font-size: $base-fontSize
+
+html, body
+  height: 100%
+
+body
+  -webkit-font-smoothing: antialiased
+  background: $c-inverse
+  color: $c-text
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, ol, p, pre
+  @extend .mbf
+  @extend .mtf
+  @extend .plf
+
+li
+  @extend .mbf
+  @extend .mtf
+  list-style: none
+
+// ----- Headers ----- //
+
+h1, h2, h3, h4
+  @extend .tls
+
+h1
+  @extend .tsxl
+
+h2
+  @extend .tsl
+
+h3
+  @extend .tsm
+
+h4
+  @extend .tsm
+
+// -------------------------------------
+//   Anchors
+// -------------------------------------
+
+a
+  @extend .tcb
+  @extend .twb
+  cursor: pointer
+  text-decoration: none
+  &:hover,
+  &:focus
+    border-bottom: 2px solid $c-base
