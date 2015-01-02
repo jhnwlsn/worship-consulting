@@ -33,24 +33,39 @@ li
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4
+h4, .h4,
+h5, .h5
   font-family: $b-fontFamily-heading
   font-weight: bold
-  line-height: 1.2
   margin-bottom: $b-space-xs
   margin-top: 0
 
 h1, .h1
-  font-size: 200%
+  font-size: $b-fontSize-xl
+  font-weight: 300
 
 h2, .h2
-  font-size: 150%
+  font-size: $b-fontSize-l
+  letter-spacing: $b-letterSpacing
+  text-transform: uppercase
 
 h3, .h3
-  font-size: 125%
+  color: $accent
+  font-size: 100%
+  letter-spacing: $b-letterSpacing
+  text-transform: uppercase
 
 h4, .h4
-  font-size: 110%
+  font-size: $b-fontSize-m
+  letter-spacing: $b-letterSpacing
+  text-transform: uppercase
+
+h5, .h5
+  color: $accent
+  font-size: $b-fontSize-s
+  letter-spacing: $b-letterSpacing
+  margin-bottom: 0
+  text-transform: uppercase
 
 // -------------------------------------
 //   Inline Content
