@@ -1,0 +1,49 @@
+// *************************************
+//
+//   Header
+//   -> Intro and image
+//
+// *************************************
+
+.header
+  background: $accent
+  color: $c-text-invert
+  overflow: hidden
+  padding: 0 $b-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.header-image
+  background: url(image-path('iphone.png')) bottom no-repeat
+  background-size: 100%
+  height: 140px
+  margin-top: $b-space-l
+  width: 100%
+  +respond-to($g-s)
+    background: url(image-path('ipad.png')) bottom no-repeat
+    background-size: 100%
+    height: 155px
+  +respond-to($g-m)
+    background: url(image-path('laptop.png')) bottom no-repeat
+    background-size: 100%
+    height: 90px
