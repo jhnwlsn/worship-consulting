@@ -1,6 +1,6 @@
 .header
   .cell.ptl
-    .logo{href: '#'}
+    .logo
       %span.logo-mark
         = partial "/assets/images/logo.svg"
       %span.logo-text
@@ -12,7 +12,7 @@
           Trustworthy and convenient worship leadership consulting
           services. All in the comfort of your browser and on your
           time. Starting at $50/hr.
-    %a.btn{href: "#"} Request An Appointment
+    %a.btn{href: "#appointment"} Request An Appointment
     .header-image &nbsp;
 
 .row
@@ -88,7 +88,7 @@
           Donec id elit non mi porta gravida at eget metus. Aenean
           lacinia bibendum.
 
-.row.row--a
+.row.row--a#appointment
   .cell.well.well--l
     %h2 Ready to Get Started?
     %p.columns
@@ -150,8 +150,8 @@
         Worship.Consulting
     %hr.mbm
     .navigation
-      %a{:href => "#"} Contact
-      %a{:href => "#"} Make Appointment
+      %a{:href => "mailto:john@j-wilson.com"} Contact
+      %a{:href => "#appointment"} Make Appointment
       %a{:href => "#"} Privacy Policy
       %p
         &copy; 2015 Bethany Wilson. All Rights Reserved.
