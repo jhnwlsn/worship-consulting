@@ -1,0 +1,58 @@
+// *************************************
+//
+//   Navigation
+//   -> Footer links
+//
+// *************************************
+
+.navigation
+  a
+    border: none
+    color: $c-text-invert
+    display: block
+    font-weight: 700
+    letter-spacing: $b-letterSpacing
+    margin-right: 2em
+    margin-top: $b-space-s
+    text-transform: uppercase
+    +respond-to($g-s)
+      display: inline
+      margin-top: 0
+    +respond-to($g-m)
+      float: left
+    &:hover,
+    &:focus
+      color: $accent
+  p
+    color: lighten($c-text, 10%)
+    font-size: $b-fontSize-s
+    margin-top: $b-space-s
+    position: relative
+    top: 0.135em
+    +respond-to($g-m)
+      float: right
+      margin-top: 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// .structure-scaffolding
