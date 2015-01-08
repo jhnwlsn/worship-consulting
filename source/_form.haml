@@ -1,0 +1,84 @@
+%form.form{action: '#'}
+  .g
+    .g-b.g-b--s--1of4
+      %h2 1. Choose Your Rate
+    .g-b.g-b--s--3of4
+      %input#review{type: 'radio', name: 'rate'}
+      %label{for: 'review'}
+        %h3.tci Discussion + Review
+        %h1 $55/hr
+        %ul
+          %li Sem Adipiscing Amet
+          %li Mollis Commodo Elit
+          %li Sem Adipiscing Amet
+          %li Mollis Commodo Elit
+      %input#discussion{type: 'radio', name: 'rate'}
+      %label{for: 'discussion'}
+        %h3.tci Discussion
+        %h1 $45/hr
+        %ul
+          %li Mollis Commodo Elit
+          %li Sem Adipiscing Amet
+          %li Mollis Commodo Elit
+          %li Sem Adipiscing Amet
+
+  .g
+    .g-b.g-b--s--1of4
+      %h2 2. Estimate a Duration
+    .g-b.g-b--s--2of4
+      %select
+        %option Duration
+      %p
+        %strong How long do you think you would like to discuss several factors?
+        Keep in mind that this is an estimate; the final billed cost will most
+        likely be a similar but different.
+    .g-b.g-b--s--1of4
+      %h1.mbf.twb $110
+      %p
+        %strong Estimated Cost
+        based on package selection and estimated duration.
+
+  .g
+    .g-b.g-b--s--1of4
+      %h2 3. Choose Your Service
+      %p
+        We like to offer many different services to communicate so that it’s
+        easiest on you. Let us know which service you prefer.
+    .g-b.g-b--s--3of4
+      %input#skype{type: 'radio', name: 'service'}
+      %label{for: 'skype'} Skype
+      %input#google{type: 'radio', name: 'service'}
+      %label{for: 'google'} Google
+      %input#facetime{type: 'radio', name: 'service'}
+      %label{for: 'facetime'} Facetime
+
+  .g
+    .g-b.g-b--s--1of4
+      %h2 4. Selected a Time to Meet
+    .g-b.g-b--s--3of4
+      %select
+        %option Month
+      %select
+        %option Day
+      %select
+        %option Time
+      %p
+        %strong We can’t guarantee that the time you select will be available,
+        but we will do our best to communicate and find a good time close enough
+        to your schedule to meet.
+
+  .g
+    .g-b.g-b--s--1of4
+      %h2 5. Let Us Know Who You Are
+    .g-b.g-b--s--3of4
+      %input{type: 'text', placeholder: 'Your Name'}
+      %input{type: 'text', placeholder: 'Your Church, Ministry, Organization, etc.'}
+      %input{type: 'text', placeholder: 'Your Email'}
+
+  .g
+    .g-b.g-b--s--1of4
+      &nbsp;
+    .g-b.g-b--s--2of4
+      %input{type: 'submit', value: 'Request Appointment'}
+    .g-b.g-b--s--1of4
+      &nbsp;
