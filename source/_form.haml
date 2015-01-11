@@ -30,7 +30,13 @@
       %h2 2. Estimate a Duration
     .g-b.g-b--s--2of4
       %select
-        %option Duration
+        %option{disabled: "disabled", selected: "selected"} Duration
+        %option 30 minutes
+        %option 1 hour
+        %option 1.5 hours
+        %option 2 hours
+        %option 2.5 hours
+        %option 3+ hours
       %p.tct
         %strong How long do you think you would like to discuss several factors?
         Keep in mind that this is an estimate; the final billed cost will most
@@ -75,13 +81,25 @@
       .g.mtf
         .g-b.g-b--s--1of3
           %select
-            %option Month
+            %option{disabled: "disabled", selected: "selected"} Month
+            %option January
+            %option February
+            %option March
+            %option April
+            %option May
+            %option June
+            %option July
+            %option August
+            %option September
+            %option October
+            %option November
+            %option December
         .g-b.g-b--s--1of3
           %select
-            %option Day
+            %option{disabled: "disabled", selected: "selected"} Day
         .g-b.g-b--s--1of3
           %select
-            %option Time
+            %option{disabled: "disabled", selected: "selected"} Time
       %p.tct
         %strong We can’t guarantee that the time you select will be available,
         but we will do our best to communicate and find a good time close enough
