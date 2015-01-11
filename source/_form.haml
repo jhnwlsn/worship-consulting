@@ -1,29 +1,31 @@
 %form.form{action: '#'}
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       %h2 1. Choose Your Rate
     .g-b.g-b--s--3of8
-      %input#review{type: 'radio', name: 'rate'}
+      %input#review{type: 'radio', name: 'rate', checked: "checked"}
       %label{for: 'review'}
-        %h3.tci Discussion + Review
-        %h1 $55/hr
-        %ul
-          %li Sem Adipiscing Amet
-          %li Mollis Commodo Elit
-          %li Sem Adipiscing Amet
-          %li Mollis Commodo Elit
+        .well
+          %h3 Discussion + Review
+          %h1 $55/hr
+          %ul
+            %li Sem Adipiscing Amet
+            %li Mollis Commodo Elit
+            %li Sem Adipiscing Amet
+            %li Mollis Commodo Elit
     .g-b.g-b--s--3of8
       %input#discussion{type: 'radio', name: 'rate'}
       %label{for: 'discussion'}
-        %h3.tci Discussion
-        %h1 $45/hr
-        %ul
-          %li Mollis Commodo Elit
-          %li Sem Adipiscing Amet
-          %li Mollis Commodo Elit
-          %li Sem Adipiscing Amet
+        .well
+          %h3 Discussion Only
+          %h1 $45/hr
+          %ul
+            %li Mollis Commodo Elit
+            %li Sem Adipiscing Amet
+            %li Mollis Commodo Elit
+            %li Sem Adipiscing Amet
 
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       %h2 2. Estimate a Duration
     .g-b.g-b--s--2of4
@@ -39,36 +41,53 @@
         %strong Estimated Cost
         based on package selection and estimated duration.
 
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       %h2 3. Choose Your Service
-      %p.tct
+      %p.mbxs.tct
         We like to offer many different services to communicate so that it’s
         easiest on you. Let us know which service you prefer.
     .g-b.g-b--s--3of4
-      %input#skype{type: 'radio', name: 'service'}
-      %label{for: 'skype'} Skype
-      %input#google{type: 'radio', name: 'service'}
-      %label{for: 'google'} Google
-      %input#facetime{type: 'radio', name: 'service'}
-      %label{for: 'facetime'} Facetime
+      .g
+        .g-b.g-b--s--1of3
+          %input#skype{type: 'radio', name: 'service', checked: "checked"}
+          %label{for: 'skype'}
+            .well.well--s
+              = partial "/assets/images/skype.svg"
+              %h3.mbf Skype
+        .g-b.g-b--s--1of3
+          %input#google{type: 'radio', name: 'service'}
+          %label{for: 'google'}
+            .well.well--s
+              = partial "/assets/images/google.svg"
+              %h3.mbf Google
+        .g-b.g-b--s--1of3
+          %input#facetime{type: 'radio', name: 'service'}
+          %label{for: 'facetime'}
+            .well.well--s
+              = partial "/assets/images/apple.svg"
+              %h3.mbf Facetime
 
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       %h2 4. Selected a Time to Meet
     .g-b.g-b--s--3of4
-      %select
-        %option Month
-      %select
-        %option Day
-      %select
-        %option Time
+      .g.mtf
+        .g-b.g-b--s--1of3
+          %select
+            %option Month
+        .g-b.g-b--s--1of3
+          %select
+            %option Day
+        .g-b.g-b--s--1of3
+          %select
+            %option Time
       %p.tct
         %strong We can’t guarantee that the time you select will be available,
         but we will do our best to communicate and find a good time close enough
         to your schedule to meet.
 
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       %h2 5. Let Us Know Who You Are
     .g-b.g-b--s--3of4
@@ -76,7 +95,7 @@
       %input{type: 'text', placeholder: 'Your Church, Ministry, Organization, etc.'}
       %input{type: 'text', placeholder: 'Your Email'}
 
-  .g
+  .g.mtl
     .g-b.g-b--s--1of4
       &nbsp;
     .g-b.g-b--s--2of4
