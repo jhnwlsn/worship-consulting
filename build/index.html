@@ -10,7 +10,7 @@
   <body class='index'>
     <div class='header'>
       <div class='cell ptl'>
-        <div class='logo' href='#'>
+        <div class='logo'>
           <span class='logo-mark'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 228.6" fill="#eaeaea" style="max-width: 200px;">
               <path d="M3 102.3l52.2-90.9C59.2 4.4 66.8 0 74.9 0h16.9L26 114l14.2 26L121 0h28.5L55.2 164.7 69.8 190 178.5 1.7c9-1 17.8 3.4 22.3 11.2l.2.4L77 228h-1.5c-8.1 0-15.5-4.4-19.6-11.4L3 125c-4-7-4-15.7 0-22.7zM106.4 228L215.7 38.7l37.2 64.5c4 6.9 4.1 15.5.1 22.5l-7.7 13.7-29.4-51-65.6 114.3h58.5l-8.4 14.5c-4.1 7.1-11.7 11.4-19.9 11.4l-74.1-.6z"/>
@@ -30,7 +30,7 @@
             </p>
           </div>
         </div>
-        <a class='btn' href='#'>Request An Appointment</a>
+        <a class='btn' href='#appointment'>Request An Appointment</a>
         <div class='header-image'>&nbsp;</div>
       </div>
     </div>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </div>
-    <div class='row row--a'>
+    <div class='row row--a' id='appointment'>
       <div class='cell well well--l'>
         <h2>Ready to Get Started?</h2>
         <p class='columns'>
@@ -145,6 +145,179 @@
           eu leo quam. Pellentesque ornare sem lacinia quam venenatis
           vestibulum. Integer posuere erat a ante venenatis.
         </p>
+        <form action='#' class='form'>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              <h2>1. Choose Your Rate</h2>
+            </div>
+            <div class='g-b g-b--s--3of8'>
+              <input checked='checked' id='review' name='rate' type='radio'>
+              <label for='review'>
+                <div class='well'>
+                  <h3>Discussion + Review</h3>
+                  <h1>$55/hr</h1>
+                  <ul>
+                    <li>Sem Adipiscing Amet</li>
+                    <li>Mollis Commodo Elit</li>
+                    <li>Sem Adipiscing Amet</li>
+                    <li>Mollis Commodo Elit</li>
+                  </ul>
+                </div>
+              </label>
+            </div>
+            <div class='g-b g-b--s--3of8'>
+              <input id='discussion' name='rate' type='radio'>
+              <label for='discussion'>
+                <div class='well'>
+                  <h3>Discussion Only</h3>
+                  <h1>$45/hr</h1>
+                  <ul>
+                    <li>Mollis Commodo Elit</li>
+                    <li>Sem Adipiscing Amet</li>
+                    <li>Mollis Commodo Elit</li>
+                    <li>Sem Adipiscing Amet</li>
+                  </ul>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              <h2>2. Estimate a Duration</h2>
+            </div>
+            <div class='g-b g-b--s--2of4'>
+              <select>
+                <option disabled='disabled' selected='selected'>Duration</option>
+                <option>30 minutes</option>
+                <option>1 hour</option>
+                <option>1.5 hours</option>
+                <option>2 hours</option>
+                <option>2.5 hours</option>
+                <option>3+ hours</option>
+              </select>
+              <p class='tct'>
+                <strong>How long do you think you would like to discuss several factors?</strong>
+                Keep in mind that this is an estimate; the final billed cost will most
+                likely be a similar but different.
+              </p>
+            </div>
+            <div class='g-b g-b--s--1of4'>
+              <h1 class='mbf twb'>$110</h1>
+              <p class='tct'>
+                <strong>Estimated Cost</strong>
+                based on package selection and estimated duration.
+              </p>
+            </div>
+          </div>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              <h2>3. Choose Your Service</h2>
+              <p class='mbxs tct'>
+                We like to offer many different services to communicate so that it’s
+                easiest on you. Let us know which service you prefer.
+              </p>
+            </div>
+            <div class='g-b g-b--s--3of4'>
+              <div class='g'>
+                <div class='g-b g-b--s--1of3'>
+                  <input checked='checked' id='skype' name='service' type='radio'>
+                  <label for='skype'>
+                    <div class='well well--s'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-430.6 512.8 167.7 170.2" enable-background="new -430.6 512.8 167.7 170.2">
+                        <path d="M-262.9 637.1c0-7.7-1.9-14.9-5.3-21.2 1.4-6.2 2.2-12.6 2.2-19.2 0-45.2-35.7-81.8-79.8-81.8-6.5 0-12.7.8-18.7 2.3-6-2.8-12.6-4.3-19.7-4.3-25.7 0-46.5 20.6-46.5 46 0 8.5 2.3 16.4 6.4 23.2-.8 4.8-1.3 9.7-1.3 14.7 0 45.2 35.7 81.8 79.8 81.8 4.7 0 9.3-.4 13.8-1.2 6.7 3.7 14.4 5.8 22.6 5.8 25.7-.2 46.5-20.7 46.5-46.1zm-36.5-16.7c-.3 8.7-3.6 16.4-9.8 22.2-7.6 7.2-18.9 11.1-32.1 11.1h-2.4c-21.5-1-34.6-12.3-41.9-21.6-3.9-5-3-12.2 2-16.1 5-3.9 12.2-3 16.1 2 6.2 8 14.5 12.3 24.7 12.7 7.7.2 14.3-1.5 17.8-4.8 1.7-1.6 2.5-3.6 2.6-6.2v-.4c.3-5.3-1.3-7.4-21.4-12.6-1.1-.3-2.3-.6-3.4-.9-14.7-3.7-39.5-10-37.9-38.1v-.2c1.5-20.6 21.9-30.7 40.3-29.8l.9.1c15.5 2 28.3 8.4 39.1 19.6 4.4 4.6 4.3 11.8-.3 16.3-4.6 4.4-11.8 4.3-16.3-.3-7-7.2-15-11.3-25.1-12.7-5.2-.1-15.2 1.7-15.8 8.5-.3 5.6-.4 9 20.7 14.3 1.2.3 2.3.6 3.4.9 9.1 2.3 17.7 4.5 24.8 9 9.9 6.1 14.6 15.4 14 27z"/>
+                      </svg>
+                      <h3 class='mbf'>Skype</h3>
+                    </div>
+                  </label>
+                </div>
+                <div class='g-b g-b--s--1of3'>
+                  <input id='google' name='service' type='radio'>
+                  <label for='google'>
+                    <div class='well well--s'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.8 184" enable-background="new 0 0 157.8 184">
+                        <path d="M156.6 64.9c-2.8-15.2-9.5-28.5-20-39.9-4.4-4.8-9.4-9-14.9-12.5C111.5 6 100.3 1.9 88.2.5c-1.5-.2-3-.2-4.4-.5H73.4c-.1.3-.4.2-.5.2-2.7.2-5.4.5-8 1-19.5 3.7-35.4 13.2-47.8 28.6C7 42.4 1.4 56.9.2 73.1c-.6 7.8 0 15.6 1.7 23.3 1.3 5.7 3.2 11.2 5.7 16.5.2.4.4.9.7 1.3 4.2 8.3 9.6 15.7 16.4 22.1 3.6 3.4 7.4 6.4 11.5 9 12.7 8 26.5 12.3 41.5 12.4.9 0 1.2.2 1.2 1.2V184c.3-.1.4-.2.6-.2 15.1-7.1 29-16.1 41.3-27.3 2.5-2.2 4.8-4.6 7.1-7 1-1 1.9-2.1 2.9-3.1 1.5-1.6 2.8-3.4 4.2-5.1 1.6-1.9 3.1-4 4.5-6.1 3.2-4.6 6.1-9.4 8.5-14.5 1.2-2.6 2.4-5.2 3.4-7.8l.1-.1c2.8-7.2 4.6-14.7 5.5-22.4.3-2.7.5-5.4.7-8.1.3-5.9 0-11.7-1.1-17.4zm-84.5 26c-.1 6.8-2.7 12.6-7.7 17.3-.3.2-.5.5-.8.7-2.6 2-5.4 3.6-8.6 4.4-1.4.4-2.7.6-4.1.8-1.1.2-1.8-.4-2.2-1.4v-8.9c.5-1.1 1.5-1.4 2.6-1.6 5.1-1.2 8-4.2 8.9-9.3.1-.7.5-1.4 0-2.1H41.4c-.5 0-1.1 0-1.6-.2-1.6-.5-2.8-2-2.8-3.6V58.6c.7-1.8 1.8-3 3.8-3h27.4c1.8 0 3.2 1.1 3.7 2.9.2.5.2.9.2 1.4v31zm48.8-31v31c0 9.2-5.8 17.9-14.3 21.4l-.6.3c-.1 0-.2.1-.4.1-.1 0-.1.1-.2.1-1.8.5-3.6.9-5.4 1.2-1.4.2-2.5-.6-2.5-2v-3c0-1.8 0-3.5.1-5.3.5-1.2 1.6-1.4 2.7-1.6 5-1.1 8.1-4.4 8.8-9.4.1-.6.5-1.3 0-1.9H89.8c-2.4 0-4-1.7-4-4V58.4c.3-.1.3-.4.4-.6.8-1.4 1.9-2.1 3.6-2.1H117c1.8 0 3.2 1.1 3.8 2.9.1.3.1.8.1 1.3z"/>
+                      </svg>
+                      <h3 class='mbf'>Google</h3>
+                    </div>
+                  </label>
+                </div>
+                <div class='g-b g-b--s--1of3'>
+                  <input id='facetime' name='service' type='radio'>
+                  <label for='facetime'>
+                    <div class='well well--s'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-371 321 456 560" enable-background="new -371 321 456 560">
+                          <path d="M9.8 618.5c.8 84.8 74.4 113 75.2 113.3-.6 2-11.8 40.2-38.8 79.7-23.3 34.1-47.6 68.1-85.7 68.8C-77 881-89 858-131.9 858c-42.9 0-56.3 21.5-91.8 22.9-36.8 1.4-64.9-36.9-88.4-70.9-48.1-69.5-84.8-196.5-35.5-282.2 24.5-42.6 68.3-69.5 115.9-70.2 36.2-.7 70.3 24.3 92.4 24.3 22.1 0 63.6-30.1 107.2-25.7 18.3.8 69.5 7.4 102.4 55.6-2.6 1.8-61.1 35.8-60.5 106.7m-70.4-208.1c19.6-23.7 32.7-56.6 29.1-89.4-28.2 1.1-62.3 18.8-82.5 42.4-18.1 21-34 54.5-29.7 86.6 31.4 2.5 63.5-15.9 83.1-39.6"/>
+                      </svg>
+                      <h3 class='mbf'>Facetime</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              <h2>4. Selected a Time to Meet</h2>
+            </div>
+            <div class='g-b g-b--s--3of4'>
+              <div class='g mtf'>
+                <div class='g-b g-b--s--1of3'>
+                  <select>
+                    <option disabled='disabled' selected='selected'>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+                <div class='g-b g-b--s--1of3'>
+                  <select>
+                    <option disabled='disabled' selected='selected'>Day</option>
+                  </select>
+                </div>
+                <div class='g-b g-b--s--1of3'>
+                  <select>
+                    <option disabled='disabled' selected='selected'>Time</option>
+                  </select>
+                </div>
+              </div>
+              <p class='tct'>
+                <strong>We can’t guarantee that the time you select will be available,</strong>
+                but we will do our best to communicate and find a good time close enough
+                to your schedule to meet.
+              </p>
+            </div>
+          </div>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              <h2>5. Let Us Know Who You Are</h2>
+            </div>
+            <div class='g-b g-b--s--3of4'>
+              <input placeholder='Your Name' type='text'>
+              <input placeholder='Your Church, Ministry, Organization, etc.' type='text'>
+              <input placeholder='Your Email' type='text'>
+            </div>
+          </div>
+          <div class='g mtl'>
+            <div class='g-b g-b--s--1of4'>
+              &nbsp;
+            </div>
+            <div class='g-b g-b--s--2of4'>
+              <input type='submit' value='Request Appointment'>
+            </div>
+            <div class='g-b g-b--s--1of4'>
+              &nbsp;
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class='row'>
@@ -209,14 +382,14 @@
           </span>
         </div>
         <hr class='mbm'>
-        <nav class='fl'>
-          <a href='#'>Contact</a>
-          <a href='#'>Make Appointment</a>
+        <div class='navigation'>
+          <a href='mailto:john@j-wilson.com'>Contact</a>
+          <a href='#appointment'>Make Appointment</a>
           <a href='#'>Privacy Policy</a>
-        </nav>
-        <p class='fr'>
-          &copy; 2015 Bethany Wilson. All Rights Reserved.
-        </p>
+          <p>
+            &copy; 2015 Bethany Wilson. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </div>
     <script src="assets/javascripts/application.js" type="text/javascript"></script>
