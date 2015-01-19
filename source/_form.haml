@@ -1,9 +1,10 @@
-%form.form{action: '#'}
+%form.form{action: 'https://formkeep.com/f/5ab0f76a6b56', method: 'POST', 'accept-charset' => 'UTF-8'}
+  %input{type: 'hidden', name: 'utf8', value: '✓'}
   .g.mtl
     .g-b.g-b--s--1of4
       %h2 1. Choose Your Rate
     .g-b.g-b--s--3of8
-      %input#review{type: 'radio', name: 'rate', checked: "checked"}
+      %input#review{type: 'radio', name: 'rate', value: 'review', checked: 'checked'}
       %label{for: 'review'}
         .well
           %h3 Discussion + Review
@@ -14,7 +15,7 @@
             %li Sem Adipiscing Amet
             %li Mollis Commodo Elit
     .g-b.g-b--s--3of8
-      %input#discussion{type: 'radio', name: 'rate'}
+      %input#discussion{type: 'radio', name: 'rate', value: 'discussion'}
       %label{for: 'discussion'}
         .well
           %h3 Discussion Only
@@ -29,14 +30,14 @@
     .g-b.g-b--s--1of4
       %h2 2. Estimate a Duration
     .g-b.g-b--s--2of4
-      %select
-        %option{disabled: "disabled", selected: "selected"} Duration
-        %option 30 minutes
-        %option 1 hour
-        %option 1.5 hours
-        %option 2 hours
-        %option 2.5 hours
-        %option 3+ hours
+      %select{name: 'duration'}
+        %option{disabled: 'disabled', selected: 'selected'} Duration
+        %option{value: '30 minutes'} 30 minutes
+        %option{value: '1 hour'} 1 hour
+        %option{value: '1.5 hours'} 1.5 hours
+        %option{value: '2 hours'} 2 hours
+        %option{value: '2.5 hours'} 2.5 hours
+        %option{value: '3+ hours'} 3+ hours
       %p.tct
         %strong How long do you think you would like to discuss several factors?
         Keep in mind that this is an estimate; the final billed cost will most
@@ -56,19 +57,19 @@
     .g-b.g-b--s--3of4
       .g
         .g-b.g-b--s--1of3
-          %input#skype{type: 'radio', name: 'service', checked: "checked"}
+          %input#skype{type: 'radio', name: 'service', checked: 'checked', value: 'skype'}
           %label{for: 'skype'}
             .well.well--s
               = partial "/assets/images/skype.svg"
               %h3.mbf Skype
         .g-b.g-b--s--1of3
-          %input#google{type: 'radio', name: 'service'}
+          %input#google{type: 'radio', name: 'service', value: 'google'}
           %label{for: 'google'}
             .well.well--s
               = partial "/assets/images/google.svg"
               %h3.mbf Google
         .g-b.g-b--s--1of3
-          %input#facetime{type: 'radio', name: 'service'}
+          %input#facetime{type: 'radio', name: 'service', value: 'facetime'}
           %label{for: 'facetime'}
             .well.well--s
               = partial "/assets/images/apple.svg"
@@ -80,20 +81,20 @@
     .g-b.g-b--s--3of4
       .g.mtf
         .g-b.g-b--s--1of3
-          %select
+          %select{name: 'month'}
             %option{disabled: "disabled", selected: "selected"} Month
-            %option January
-            %option February
-            %option March
-            %option April
-            %option May
-            %option June
-            %option July
-            %option August
-            %option September
-            %option October
-            %option November
-            %option December
+            %option{value: 'january'} January
+            %option{value: 'february'} February
+            %option{value: 'march'} March
+            %option{value: 'april'} April
+            %option{value: 'may'} May
+            %option{value: 'june'} June
+            %option{value: 'july'} July
+            %option{value: 'august'} August
+            %option{value: 'september'} September
+            %option{value: 'october'} October
+            %option{value: 'november'} November
+            %option{value: 'december'} December
         .g-b.g-b--s--1of3
           %select
             %option{disabled: "disabled", selected: "selected"} Day
